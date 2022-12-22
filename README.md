@@ -20,11 +20,11 @@ All of these microservices are loosely coupled, and if we want to change one, we
 In this example, the authentication service is reading to in writing from Postgres database, the logging service is reading and writing to Mongo database.
 
 #### In micro service architecture most obvious question arises is about communication between these services. How do these microservices talk to each other ?
-**The most common and the easiest is to use a standard JSON rest API. So each microservice reads and writes JSON. There are other approaches as well, like RPC which are much faster than JSON and gRPC, which is even faster than RPC in many cases. gRPC is faster than RPC in many cases but not always.**
+**The most common and the easiest is to use a standard JSON rest API. So each microservice reads and writes JSON. There are other approaches as well, like RPC which are much faster than JSON and gRPC, which is even faster than RPC in many cases. gRPC is faster than RPC in many cases but not always.
 
-#### Microservices and also talk to the individual microservices by pushing something into a queue like RabbitMQ.
+Microservices and also talk to the individual microservices by pushing something into a queue like RabbitMQ.**
 
-## In this example we're going to build a front end web application, a very simple web application that serves up a few Web pages and that will connect to five different microservices.
+#### *In this example we're going to build a front end web application, a very simple web application that serves up a few Web pages and that will connect to five different microservices.*
 
 > **1.	Broker Service:** which is an optional single point of entry into the microservice. So the broker will receive requests from the front end and then fire off requests and consumer responses from different microservices.
 
