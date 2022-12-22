@@ -39,9 +39,12 @@ In this example, the authentication service is reading to in writing from Postgr
 > We will communicate between microservices using the rest API with JSON, RPC and gRPC. Also initiate and respond to events using the Advanced Message
 Queuing Protocol(AMQP) with the rabbit MQ as the back end.
 
-Build and deployment:
-> Build docker image for each microservice. 
-> Push docker image to docker hub.
-> Deploy distributed application using docker swarm.
-> Deploy distributed application using Kubernetes.
+***Build and deployment:***
+> **Build docker image for each microservice.**
+
+> **Push docker image to docker hub.**
+
+> **Deploy distributed application using docker swarm.**
+
+> **Deploy distributed application using Kubernetes.**
 
